@@ -1,0 +1,83 @@
+/* {
+    border: 1px dotted yellow;
+}*/
+
+body {
+    position: absolute;
+    overflow: scroll;
+    background-color: #403f3f;
+    width: 100%;
+    min-width: 876px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.circle_image {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+
+/*=====================*/
+
+
+@media only screen and (max-device-width: 480px) {
+    body {
+	min-width: 300px;
+	width: 480px;
+	height: 200px;
+	overflow: auto;
+    }
+
+    #banner {
+	height: 60px;
+    }
+    
+    #navbar {
+	position: fixed;
+	overflow: visible;
+	top: 60px;
+	width: 80px;
+	height: 100%;
+    }
+
+    .navitm_mask {
+	position: relative;
+	top: 15px;
+	height: 20px;
+	width: 80px;
+    }
+    
+    .navitm {
+	display: inline;
+	font-size: 0.75em;
+	text-align: left;
+    }
+
+    .navitm p {
+	
+    }
+
+    .circle_image {
+	width: 60px;
+	height: 60px;
+    }
+    
+    #profile_image {
+	top: 5px;
+	left: 5px;
+	position: absolute;
+    }
+}
