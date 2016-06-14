@@ -21,10 +21,12 @@ $(document).ready(function(){
 
     $(".navitm").hover(function(){
 	if($(this).children(".navmnu").length > 0){
-	    $(this).css({"height":$(this).children(".navmnu").height()+35});
+	    $(this).css({"height":$(this).children(".navmnu").height()+35,
+			 "border-bottom-left-radius":"5px",
+			 "border-bottom-right-radius":"5px"});
 	}
     }, function() {
-	$(this).css({"height":"30px"});
+	$(this).css({"height":"30px","border-radius":"0px"});
     });
 
 /*    $(".navitm").mouseout(function() {

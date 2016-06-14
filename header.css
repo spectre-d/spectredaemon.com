@@ -108,18 +108,19 @@
 }
 
 .navitm {
+    float: left;
     position: relative;
     background-color: #5a5858;
     text-align: center;
     width: 150px;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 0px;
     transition: all .25s ease;
     overflow: hidden;
     color: black;
 }
 
-.navitm_mask:hover > .navitm {
+.navitm:hover {
     background-color: #817e7e;
 }
 
