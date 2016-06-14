@@ -28,8 +28,4 @@ $(document).ready(function(){
     }, function() {
 	$(this).css({"height":"30px","border-radius":"0px"});
     });
-
-/*    $(".navitm").mouseout(function() {
-	$(this).css({"height":"30px"});
-    });*/
 });
