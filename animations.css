@@ -1,0 +1,86 @@
+@keyframes header_pulse {
+    0% {
+	color: black;
+    }
+    33% {
+	color: white;
+    }
+    100% {
+	color: black;
+    }
+}
+
+@keyframes headline_pulse {
+    0% {
+    color: #272626;
+    }
+    33% {
+    color: white;
+    }
+    100% {
+    color: #272626;
+    }
+}
+
+@keyframes profile_image {
+    0% {
+	right: -100px;
+	opacity: 0;
+    }
+    100% {
+	right: 25px;
+	opacity: 1;
+    }
+}
+
+@keyframes prof_img_link_bot {
+    0% {
+	z-index: 2;
+	top: 80px;
+    }
+    50% {
+	top: 0px;
+    }
+    99% {
+	z-index: 2;
+    }
+    100% {
+	z-index: 1;
+	top: 80px;
+    }
+}
+
+@keyframes prof_img_link_lft {
+    0% {
+	z-index: 2;
+	left: -80px;
+    }
+    50% {
+	background-color: white;
+	left: 0px;
+    }
+    99% {
+	z-index: 2;
+    }
+    100% {
+	z-index: 1;
+	left: -80px;
+    }
+}
+
+@keyframes prof_img_link_rgt {
+    0% {
+	z-index: 2;
+	left: 80px;
+    }
+    50% {
+	left: 0px;
+    }
+    99% {
+	z-index: 2;
+    }
+    100% {
+	z-index: 1;
+	left: 80px;
+    }
+}

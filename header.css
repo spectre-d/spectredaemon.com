@@ -160,31 +160,3 @@
 .navmnuitm:hover{
     color: white;
 }
-
-
-/*===KeyFrames===*/
-
-
-@keyframes header_pulse {
-    0% {
-	color: black;
-    }
-    33% {
-	color: white;
-    }
-    100% {
-	color: black;
-    }
-}
-
-@keyframes headline_pulse {
-    0% {
-    color: #272626;
-    }
-    33% {
-    color: white;
-    }
-    100% {
-    color: #272626;
-    }
-}

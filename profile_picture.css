@@ -24,18 +24,6 @@
     right: 0px;
 }
 
-#switch {
-    position: absolute;
-    z-index: 5;    
-    height: 5px;
-    width: 5px;
-    border-right: 2px solid green;
-    border-radius: 100%;
-    background-color: white;
-    right: 35px;
-    top: 110px;
-}
-
 .stand {
     position: absolute;
     z-index: 3;
@@ -169,71 +157,3 @@
     animation-duration: .5s;
     animation-delay: 3.5s;
 }
-
-
-/*===KeyFrames===*/
-
-
-@keyframes profile_image {
-    0% {
-	right: -100px;
-	opacity: 0;
-    }
-    100% {
-	right: 25px;
-	opacity: 1;
-    }
-}
-
-@keyframes prof_img_link_bot {
-    0% {
-	z-index: 2;
-	top: 80px;
-    }
-    50% {
-	top: 0px;
-    }
-    99% {
-	z-index: 2;
-    }
-    100% {
-	z-index: 1;
-	top: 80px;
-    }
-}
-
-@keyframes prof_img_link_lft {
-    0% {
-	z-index: 2;
-	left: -80px;
-    }
-    50% {
-	background-color: white;
-	left: 0px;
-    }
-    99% {
-	z-index: 2;
-    }
-    100% {
-	z-index: 1;
-	left: -80px;
-    }
-}
-
-@keyframes prof_img_link_rgt {
-    0% {
-	z-index: 2;
-	left: 80px;
-    }
-    50% {
-	left: 0px;
-    }
-    99% {
-	z-index: 2;
-    }
-    100% {
-	z-index: 1;
-	left: 80px;
-    }
-}
-p

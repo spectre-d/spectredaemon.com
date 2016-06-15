@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+    $(".title").hover(function() {
+	$(this).css("color", "white");
+    }, function() {
+	if($(this).parent().children(".content").height() == 0) {
+	    $(this).css("color", "black");
+	}
+    });
+    
     $(".title").click(function(){
 	var height = $(this).parent().children(".content").children("p").height();
 	if($(this).parent().children(".content").height() == 0){
