@@ -1,0 +1,72 @@
+#resume_wrapper {
+    width: 850px;
+    height: 250px;
+    position: relative;
+    top: 175px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resume_button {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    background-color: #272626;
+    transition: all 1s ease;
+    margin-left: auto;
+    margin-right: auto;
+/*    animation-name: res_button;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;*/
+}
+
+#doc_image {
+    opacity: 0;
+    width: 75px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    transition: all 1.25s ease;
+    animation: doc_image 5s infinite;
+}
+
+#resume_button:hover #doc_image {
+    opacity: 1;
+}
+
+#triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    bottom: 5px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 5px solid #272626;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 2s ease;
+}
+
+#resume_frame_wrapper {
+    position: relative;
+    top: -5px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 0px;
+    background-color: #272626;
+    z-index: -5;
+    transition: all 3s ease;
+}
+
+#resume {
+    position: relative;
+    margin-top: 5px;
+    top: 10px;
+    left: 12px;
+    width: 826px;
+    height: 775px;
+}

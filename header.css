@@ -84,6 +84,7 @@
 #navbar {
     position: absolute;
     background-color: #0d0d0d;
+    border-bottom: 2px solid black;
     height: 30px;
     width: 100%;
     bottom: -30px;
@@ -122,6 +123,10 @@
     margin: 0;
     color: black;
     transition: all .25s ease;
+}
+
+.navitm_current {
+    background-color: #817e7e;
 }
 
 .navlink:link {

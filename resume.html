@@ -3,67 +3,96 @@
 <html>
     <head>
         <title>Spectre Daemon</title>
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-	<script src="cookies.js"></script>
-	<script src="animations.js"></script>
+        <link type="text/css" rel="stylesheet" href="body.css" />
+	<link type="text/css" rel="stylesheet" href="page.css" />
+	<link type="text/css" rel="stylesheet" href="header.css" />
+	<link type="text/css" rel="stylesheet" href="profile_picture.css" />
+	<link type="text/css" rel="stylesheet" href="resume.css" />
+	<link type="text/css" rel="stylesheet" href="resume_animations.css" />
+	<script type="text/javascript" src="analytics.js"></script>
+	<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="cookies.js"></script>
+	<script type="text/javascript" src="animations.js"></script>
+	<script type="text/javascript" src="styling.js"></script>
+	<script type="text/javascript" src="interactives.js"></script>
     </head> 
-    <body onload="first_visit()">
-      <div id="profile_image">
-	<img src="imgs/me.jpg" id="prof_img_front" />
-	<a href="https://www.linkedin.com/in/spectred">
-	  <img src="imgs/in.png" id="prof_img_in" />
-	</a>
-	<a href="https://www.linkedin.com/in/spectred">
-	  <img src="imgs/gh.png" id="prof_img_gh" />
-	</a>
-	<a href="http://stackoverflow.com/users/5986225/spectre-d">
-	  <img src="imgs/so2.jpg" id="prof_img_so" />
-	</a>	
-      </div>
+    <body onload="first_load()">
       <div id="banner">
-	<h1 id="title" onload="first_load(this)">Bryce Orihuela</h1>
-	<p id="headline">Programmer</p>
-	<p id="headline2">, scripter</p>
+	<div id="prof_topper">
+	  <div id="stnd_lft" class="stand">
+	  </div>	  
+	  <div id="stnd_top_lft" class="stand">
+	  </div>	  
+	  <div id="stnd_top" class="stand">
+	  </div>
+	  <div id="stnd_top_rgt" class="stand">
+	  </div>	  
+	  <div id="stnd_rgt" class="stand">
+	  </div>	  
+	  <div id="light_lft" class="light">
+	  </div>
+	  <div id="light_top_lft" class="light">
+	  </div>
+	  <div id="light_top" class="light">
+	  </div>
+	  <div id="light_top_rgt" class="light">
+	  </div>
+	  <div id="light_rgt" class="light">
+	  </div>	  
+	</div>
+	<div id="prof_back">
+	</div>
+	<div id="profile_inner">
+	  <img src="imgs/me.jpg" id="prof_img_front" />
+	  <a href="https://www.linkedin.com/in/spectred">
+	    <img src="imgs/in.png" id="prof_img_in" />
+	  </a>
+	  <a href="https://www.linkedin.com/in/spectred">
+	    <img src="imgs/gh.png" id="prof_img_gh" />
+	  </a>
+	  <a href="http://stackoverflow.com/users/5986225/spectre-d">
+	    <img src="imgs/so2.jpg" id="prof_img_so" />
+	  </a>	
+	</div>
+	<div style="position:absolute; display: inline-block;width: 35px; height: 35px; border-radius: 100%; background-color: red" onclick="clear_cookies()">
+	</div>
+	<h1 id="title">Bryce Orihuela</h1>
+	<p id="headline">Programmer,</p>
+	<p id="headline2">student,</p>
+	<p id="headline3">IT professional</p>
+	<div id="navbar">
+	  <div class="navitm">
+	    <a href="index.html" class="navlink">Home</a>
+	  </div>
+	  <div class="navitm">
+	    <a href="resume.html" class="navlink">Resume</a>
+	  </div>
+	  <div class="navitm">
+	    <a href="#" class="navlink">Projects</a>
+	    <div class="navmnu">
+	      <a href="#" class="navmnuitm">Pyra</a>
+	      <a href="#" class="navmnuitm">Distributed Computing</a>
+	      <a href="#" class="navmnuitm">spectredaemon.com</a>
+	      <a href="#" class="navmnuitm">NetSuite Automation</a>		
+	    </div>
+	  </div>
+	  <div class="navitm">
+	    <a href="#" class="navlink">Tutorials</a>
+	  </div>
+	  <div class="navitm">
+	    <a href="#" class="navlink">About</a>
+	  </div>
+	</div>
       </div>
-      <div id="navbar">
-        <a class="navlink" href="index.html">
-	  <div class="navitm_mask">
-	    <div class="navitm">
-              <p>HOME</p>
-            </div>
-	  </div>
-	</a>
-	<a class="navlink" href="index.html">
-	  <div class="navitm_mask">
-	    <div class="navitm">
-	      <p>RESUME</p>
-            </div>
-	  </div>
-        </a>
-        <a class="navlink" href="index.html">
-	  <div class="navitm_mask">
-	    <div class="navitm">
-	      <p>PROJECTS</p>
-            </div>
-	  </div>
-        </a>
-        <a class="navlink" href="index.html">
-	  <div class="navitm_mask">
-	    <div class="navitm">
-	      <p>CONTACT</p>
-            </div>
-	  </div>
-        </a>
-        <a class="navlink" href="index.html">
-	  <div class="navitm_mask">
-	    <div class="navitm">
-	      <p>MORE STUFF</p>
-            </div>
-	  </div>
-        </a>
-      </div>
-      <div style="position: relative; height: 600px; width:500px;">
-		<iframe frameborder="0" height="600" src="https://docs.google.com/document/preview?authuser=0&amp;hgd=1&amp;id=1iMZG27FcUwtiIrvgNRB-7FJN55yw72bzXLoY7c2c3IE" title="Resume" width="100%"></iframe> 
+      <div id="resume_wrapper">
+	<div id="resume_button">
+	  <img id="doc_image" src="imgs/doc_dark.png" />
+	</div>
+	<div id="triangle">
+	</div>
+	<div id="resume_frame_wrapper">
+	  <iframe id="resume" src="https://docs.google.com/document/d/1iMZG27FcUwtiIrvgNRB-7FJN55yw72bzXLoY7c2c3IE/pub?embedded=true"></iframe>
+	</div>
       </div>
     </body>
 </html>

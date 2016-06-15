@@ -36,4 +36,24 @@ $(document).ready(function(){
     }, function() {
 	$(this).css({"height":"30px","border-radius":"0px"});
     });
+
+    $("#resume_button").click(function() {
+	if($(this).children("#doc_image").attr("src") == "imgs/doc_dark.png"){
+	    $(this).children("img").attr("src","imgs/doc.png");
+	    $(this).children("#doc_image").css({"animation":"null",
+						"opacity":"1"});
+	    $(this).parent().children("#triangle").css(
+		"border-top","25px solid #272626");
+	    $("#resume_frame_wrapper").css({"height":"800px","top":"-5px",
+					    "width":"850","border-radius":"10px"});
+	} else {
+	    $(this).children("img").attr("src","imgs/doc_dark.png");
+	    $(this).children("#doc_image").css({"animation":"doc_image 5s infinite",
+						"opacity":"0"});
+	    $(this).parent().children("#triangle").css(
+		"border-top","5px solid #272626");
+	    $("#resume_frame_wrapper").css({"height":"0px","width":"0px",
+					    "border-radius":"100%"});
+	}
+    });
 });
