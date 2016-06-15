@@ -12,7 +12,6 @@
 #title {
     position: relative;
     display: inline;
-    z-index: 5;
     top: 60px;
     left: 5px;
     color: black;
@@ -31,7 +30,6 @@
 #headline {
     position: relative;
     display: inline;
-    z-index: 5;
     top: 60px;
     left: 10px;
     color: #272626;
@@ -46,7 +44,6 @@
 #headline2 {
     position: relative;
     display: inline;
-    z-index: 5;
     top: 60px;
     left: 10px;
     color: #272626;
@@ -61,7 +58,6 @@
 #headline3 {
     position: relative;
     display: inline;
-    z-index: 5;
     top: 60px;
     left: 10px;
     color: #272626;
@@ -94,19 +90,6 @@
     left: 0px;
 }
 
-.navitm_mask {
-    float: left;
-    position: relative;
-    background-color: #5a5858;
-    height: 30px;
-    width: 150px;
-    transition: all .25s ease;
-}
-
-.navitm_mask:hover {
-    background-color: #817e7e;    
-}
-
 .navitm {
     float: left;
     position: relative;
@@ -117,11 +100,11 @@
     border-radius: 0px;
     transition: all .25s ease;
     overflow: hidden;
-    color: black;
 }
 
 .navitm:hover {
     background-color: #817e7e;
+    /* Height and border-radii in interactives.js */
 }
 
 .navlink {
@@ -149,7 +132,7 @@
     color: black;
 }
 
-.navlink:hover {
+.navitm:hover .navlink {
     color: white;
 }
 
@@ -158,8 +141,6 @@
 }
 
 .navmnuitm {
-    text-align: center;
-    font-family: sans;
     font-size: 14px;
     display: block;
     width: 150px;
@@ -171,39 +152,11 @@
     text-decoration: none;
 }
 
-.navmnuitm:hover{
-    color: white;
-}
-
 .navmnuitm:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
 
-
-/*===KeyFrames===*/
-
-
-@keyframes header_pulse {
-    0% {
-	color: black;
-    }
-    33% {
-	color: white;
-    }
-    100% {
-	color: black;
-    }
-}
-
-@keyframes headline_pulse {
-    0% {
-    color: #272626;
-    }
-    33% {
+.navmnuitm:hover{
     color: white;
-    }
-    100% {
-    color: #272626;
-    }
 }

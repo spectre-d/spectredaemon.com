@@ -22,7 +22,8 @@ function first_load()
     }
 }
 
-$(document).ready(function(){     
+$(document).ready(function(){
+    $(".light").css("background-color","white");
     $(".light").click(function(){
 	$(this).css('background-color', 'transparent');
     });
