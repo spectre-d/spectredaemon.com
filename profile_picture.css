@@ -1,0 +1,159 @@
+#profile_inner {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    height: 90px;
+    width: 90px;
+    right: 25px;
+    top: 25px;
+    border: 5px solid #0d0d0d;
+    border-radius: 100%;
+}
+
+#prof_back {
+    position: absolute;
+    background-color: #0d0d0d;
+    height: 50px;
+    width: 100px;
+    right: 25px;
+    top: 79px;
+}
+
+#prof_topper {
+    position: relative;
+    right: 0px;
+}
+
+.stand {
+    position: absolute;
+    z-index: 3;
+    border-bottom: 10px solid #0d0d0d;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 10px;
+}
+
+#stnd_top {
+    top: 18px;
+    right: 66px;
+}
+
+#stnd_top_rgt {
+    top: 33px;
+    right: 27px;
+    transform: rotateZ(45deg);
+}
+
+#stnd_rgt {
+    top: 68px;
+    right: 12px;
+    transform: rotateZ(90deg);
+}
+
+#stnd_lft {
+    top: 68px;
+    right: 118px;
+    transform: rotateZ(-90deg);
+}
+
+#stnd_top_lft {
+    top: 33px;
+    right: 103px;
+    transform: rotateZ(-45deg);
+}
+
+.light {
+    position: absolute;
+    z-index: 2;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #0d0d0d;
+    border-radius: 100%;
+}
+
+#light_top {
+    top: 5px;
+    right: 68px;
+    transition: background-color 1s ease;
+}
+
+#light_top_rgt {
+    height: 11px;
+    width: 11px;
+    top: 25px;
+    right: 24px;
+    transform: rotateZ(45deg);
+    transition: background-color 1.66s ease;    
+}
+
+#light_rgt {
+    top: 65px;
+    right: 3px;
+    transform: rotateZ(90deg);
+    transition: background-color 2.33s ease;    
+}
+
+#light_lft {
+    top: 65px;
+    right: 131px;
+    transform: rotateZ(-90deg);
+    transition: background-color 2.33s ease;    
+}
+
+#light_top_lft {
+    height: 11px;
+    width: 11px;    
+    top: 25px;
+    right: 113px;
+    transform: rotateZ(-45deg);
+    transition: background-color 1.66s ease;    
+}
+
+#prof_img_front {
+    height: 90px;
+    position: absolute;
+}
+
+#prof_img_in {
+    position: absolute;
+    z-index: 1;
+    height: 90px;
+    top: 80px;
+    border-radius: 100%;
+    transition: all .5s ease;
+    animation-name: prof_img_link_bot;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-delay: 2.5s;
+}
+
+#prof_img_gh {
+    position: absolute;
+    z-index: 1;
+    height: 90px;
+    left: -80px;
+    border-radius: 100%;
+    transition: all .5s ease;
+    animation-name: prof_img_link_lft;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-delay: 3s;
+    
+}
+
+#prof_img_so {
+    position: absolute;
+    z-index: 1;
+    height: 90px;
+    left: 80px;    
+    border-radius: 100%;
+    transition: all .5s ease;
+    animation-name: prof_img_link_rgt;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: .5s;
+    animation-delay: 3.5s;
+}
